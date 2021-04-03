@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #container {
+            width: 600px;
+            height: 400px;
+            border: solid;
+            position: relative;
+
+        }
+
+        .item {
+            width: 100px;
+            height: 100px;
+            border: solid;
+            /*            default position is static*/
+        }
+
+        .i1 {
+            position: relative;
+            left: 200px;
+            bottom: 0px;
+        }
+
+        .i2 {
+            position: fixed;
+            right: 50px;
+            bottom: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <!--      relative means relative to orginal position-->
+        <div class="item i1">relative</div>
+        <!--       absolute item looking for its closest container with none static value-->
+        <div class="item i2">absolute</div>
+        <div class="item i3">fixed</div>
+    </div>
+
+</body></html>

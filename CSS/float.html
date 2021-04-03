@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 250px;
+            height: 300px;
+        }
+
+        /* layout: float, inline-block */
+        /* position: relative, absolute */
+        /* box-model: margin, padding,border */
+        .left {
+            background-color: gray;
+            opacity: 0.5;
+            float: left;
+            margin-right: 20px;
+            height: 100px;
+        }
+
+        .right {
+            background-color: rebeccapurple;
+            opacity: 0.5;
+            float: right;
+            margin-left: 20px;
+        }
+
+        p {
+            border: solid;
+            /*            em relative unit*/
+            /*            relative the font size of parent elements */
+            /* 16px * 1.5=24px */
+            font-size: 1.5em;
+
+            /* clear: don't put floating elements */
+            /* clear: left;*/
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box left"></div>
+    <div class="box right"></div>
+    <!--    text go around the floating elements-->
+    <!--    p will go under the floating elements-->
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ab est commodi. Consequatur vel, dolorem alias inventore quos nobis totam recusandae sint reiciendis eaque! Quae eos vel odio, tenetur rem.</p>
+
+</body></html>
+
+

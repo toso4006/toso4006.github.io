@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>specificity</title>
+    <style>
+        ul {
+            font-style: 50px;
+            color: purple;
+        }
+        li {
+            color: red;
+        }
+        .first {
+            color: royalblue;
+        }
+        li {
+            color: red !important;
+        }
+/*
+        #first {
+            color: green;
+        }
+        
+*/
+        html body ul li{
+            color: fuchsia !important;
+        }
+        li[data='second'] {
+            
+        }
+    </style>
+</head>
+<body>
+   <ul>
+    <li id='first' class=' first'
+    style="color: lime !important">hot dog</li>
+    <li data='second' class='first'>pudding</li>
+    <li>pizza</li>
+   </ul>
+</body>
+</html>

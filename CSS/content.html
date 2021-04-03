@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>selectors</title>
+    <style>
+        li:fist-child {
+            font-size: 40px;
+        }
+        li:nth-child(2) {
+            font-size: 35px;
+            
+        }
+        li:last-child {
+            font-size: 35px;
+            color: green;
+        }
+        li:not(:first-child) {
+            background-color: skyblue;
+            
+        }
+    </style>
+</head>
+<body>
+    <li>sunday</li>
+    <li>monday</li>
+    <li>tuesday</li>
+    <li>wendesday</li>
+    <li>thursday</li>
+    <li>friday</li>
+    <li>saturday</li>
+</body>
+</html>
